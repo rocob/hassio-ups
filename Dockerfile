@@ -148,6 +148,6 @@ RUN apk add --no-cache --virtual .build-deps  \
 	&& pip3 install pi-ina219 \
 	&& apk del --no-network .build-deps
 
-RUN echo "*   *   *   *   *   cd /root/config/python_scripts && python3 ina219demo.py > ina219.txt" >> /etc/crontabs/root
+RUN echo "*   *   *   *   *   cd /root/config/hassio-ups && python3 ina219ups.py > ina219.txt" >> /etc/crontabs/root
 
 CMD ["crond", "-f"]
