@@ -15,6 +15,8 @@ in config folder create new folder:
 
 \# docker run -d --privileged --restart=always -v /mnt/date/supervisor/homeassistant:/root/config:rw --name ups hassio-ups
 
+
+
 ups board home page
 https://wiki.52pi.com/index.php/UPS_(With_RTC_%26_Coulometer)_For_Raspberry_Pi_SKU:_EP-0118
 
