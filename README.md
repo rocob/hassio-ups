@@ -6,7 +6,7 @@
 
 \# wget https://raw.githubusercontent.com/rocob/hassio-ups/main/Dockerfile
 
-\# wget https://raw.githubusercontent.com/rocob/hassio-ups/main/ina219-ups.py
+\# wget https://raw.githubusercontent.com/rocob/hassio-ups/main/ina219ups.py
 
 \# docker build -t hassio-ups .
 
