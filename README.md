@@ -1,5 +1,7 @@
 # hassio-ups
 
+in config folder create new folder:
+
 \# mkdir hassio-ups
 
 \# cd hassio-ups
