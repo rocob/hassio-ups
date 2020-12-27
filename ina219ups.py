@@ -8,11 +8,11 @@ def read():
     """Define method to read information from coulometer."""
     ina = INA219(shunt_ohms=SHUNT_OHMS, busnum=1)
     ina.configure()
-    print("Bus Voltage: %.3f V" % ina.voltage())
+    print("Voltage: %.3f V" % ina.voltage())
     try:
-        print("Bus Current: %.3f mA" % ina.current())
+        print("Current: %.3f mA" % ina.current())
         print("Power: %.3f mW" % ina.power())
-        print("Shunt voltage: %.3f mV" % ina.shunt_voltage())
+        print("Shunt: %.3f mV" % ina.shunt_voltage())
     except DeviceRangeError as e:
         print(e)
 
