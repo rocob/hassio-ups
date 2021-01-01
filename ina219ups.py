@@ -4,7 +4,6 @@ from ina219 import DeviceRangeError
 SHUNT_OHMS = 0.05
 
 from datetime import datetime
-#today = date.today()
 now = datetime.now()
 dt = now.strftime("%Y-%m-%d")
 tm = now.strftime("%H:%M")
