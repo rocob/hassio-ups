@@ -4,14 +4,14 @@ this manual is how to ups board SKU: EP-0118 in home assistant and rpi4
 # 1. step
 in config folder create new folder:
 
-`\# mkdir hassio-ups
-\# cd hassio-ups
+```\# mkdir hassio-ups```
+```\# cd hassio-ups```
 
 \# wget https://raw.githubusercontent.com/rocob/hassio-ups/main/Dockerfile
 
 \# wget https://raw.githubusercontent.com/rocob/hassio-ups/main/ina219ups.py
 
-\# docker build -t hassio-ups .`
+\# docker build -t hassio-ups .
 
 this build cca 25 minutes
 
