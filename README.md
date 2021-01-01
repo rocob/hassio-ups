@@ -6,7 +6,7 @@ enable i2c:<br>
 https://www.home-assistant.io/hassio/enable_i2c/
 
 # 2. step
-in config folder create new folder:
+in config folder create new folder, download files and build docker image:
 
 ```
 # mkdir hassio-ups
@@ -18,11 +18,11 @@ in config folder create new folder:
 
 > this build cca 25 minutes
 
-start docker:
+start docker container:
 
 ```# docker run -d --privileged --restart=always -v /mnt/date/supervisor/homeassistant:/root/config:rw --name ups hassio-ups```<br>
 
-after every 1 minute update file with name **ina219.txt** with this content:
+after docker container every 1 minute update file with name **ina219.txt** with this content:
 
 Date: 2021-01-01<br>
 Time: 17:22<br>
