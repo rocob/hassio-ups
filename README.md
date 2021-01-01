@@ -14,7 +14,7 @@ in config folder create new folder:
 ```# wget https://raw.githubusercontent.com/rocob/hassio-ups/main/ina219ups.py```<br>
 ```# docker build -t hassio-ups .```<br>
 
-this build cca 25 minutes<br>
+> this build cca 25 minutes
 start docker:
 
 ```# docker run -d --privileged --restart=always -v /mnt/date/supervisor/homeassistant:/root/config:rw --name ups hassio-ups```<br>
@@ -32,8 +32,8 @@ Shunt: 39.450 mV<br>
 create sensors in **configuration.yaml** file:
 
 ```sensor:```<br>
-```  \- platform: command_line```<br>
-```    name: UPS Voltage```<br>
+  ```- platform: command_line```<br>
+    ```name: UPS Voltage```<br>
 ```    command: "cat /config/hassio_ups/ina219.txt | grep Voltage | cut -d ' ' -f2"```<br>
 ```    unit_of_measurement: "V"```<br>
 ```    \#value_template: '{{ value | multiply(0.001) | round(1) }}'```<br>
