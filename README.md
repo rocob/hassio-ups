@@ -31,12 +31,12 @@ Shunt: 39.450 mV<br>
 # 3. step
 create sensors in **configuration.yaml** file:
 
-`sensor:<br>
-  \- platform: command_line<br>
-    name: UPS Voltage<br>
-    command: "cat /config/hassio_ups/ina219.txt | grep Voltage | cut -d ' ' -f2"<br>
-    unit_of_measurement: "V"<br>
-    \#value_template: '{{ value | multiply(0.001) | round(1) }}'<br>`
+```sensor:```<br>
+```  \- platform: command_line```<br>
+```    name: UPS Voltage```<br>
+```    command: "cat /config/hassio_ups/ina219.txt | grep Voltage | cut -d ' ' -f2"```<br>
+```    unit_of_measurement: "V"```<br>
+```    \#value_template: '{{ value | multiply(0.001) | round(1) }}'```<br>
 
 
 ups board home page:<br>
