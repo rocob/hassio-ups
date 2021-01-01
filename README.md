@@ -19,12 +19,13 @@ this build cca 25 minutes
 \# docker run -d --privileged --restart=always -v /mnt/date/supervisor/homeassistant:/root/config:rw --name ups hassio-ups
 
 when every 1 minute update file name ina219.txt with this content:
-Date: 2021-01-01
-Time: 17:22
-Voltage: 5.148 V
-Current: 778.561 mA
-Power: 4103.902 mW
-Shunt: 39.450 mV
+
+Date: 2021-01-01<br>
+Time: 17:22<br>
+Voltage: 5.148 V<br>
+Current: 778.561 mA<br>
+Power: 4103.902 mW<br>
+Shunt: 39.450 mV<br>
 
 ups board home page:
 
