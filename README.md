@@ -30,15 +30,15 @@ Shunt: 39.450 mV<br>
 
 # 3. step
 create sensors in **configuration.yaml** file:
---------------------
 
-sensor:<br>
-  \- platform: command_line<br>
-    name: UPS Voltage<br>
-    command: "cat /config/hassio_ups/ina219.txt | grep Voltage | cut -d ' ' -f2"<br>
-    unit_of_measurement: "V"<br>
-    \#value_template: '{{ value | multiply(0.001) | round(1) }}'<br>
-
+```
+sensor:
+  - platform: command_line
+    name: UPS Voltage
+    command: "cat /config/hassio_ups/ina219.txt | grep Voltage | cut -d ' ' -f2"
+    unit_of_measurement: "V"
+    #value_template: '{{ value | multiply(0.001) | round(1) }}'
+```
 
 ups board home page:<br>
 https://wiki.52pi.com/index.php/UPS_(With_RTC_%26_Coulometer)_For_Raspberry_Pi_SKU:_EP-0118
