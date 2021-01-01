@@ -9,10 +9,8 @@ https://www.home-assistant.io/hassio/enable_i2c/
 in config folder create new folder, download files and build docker image:
 
 ```
-# mkdir hassio-ups
+# git clone https://github.com/rocob/hassio-ups.git
 # cd hassio-ups
-# wget https://raw.githubusercontent.com/rocob/hassio-ups/main/Dockerfile
-# wget https://raw.githubusercontent.com/rocob/hassio-ups/main/ina219ups.py
 # docker build -t hassio-ups .
 ```
 
