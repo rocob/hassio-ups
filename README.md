@@ -1,7 +1,7 @@
 # hassio-ups
 this manual is how to ups board SKU: EP-0118 in home assistant and rpi4
 
-#1. step
+# 1. step
 in config folder create new folder:
 
 \# mkdir hassio-ups
